@@ -9,3 +9,15 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema.define(version: 2019_05_07_172635) do
+
+  create_table "movies", force: :cascade do |t|
+    t.string "title"
+    t.integer "release_date"
+    t.string "director"
+    t.string "lead"
+    t.boolean "in_theaters"
+  end
+
+end
